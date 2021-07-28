@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portafolio WEB</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/jquery.bsPhotoGallery.css">
+
+    <script src="Js/jquery.min.js"></script>
+    <script src="Js/Popper.min.js"></script>
+    <script src="Js/bootstrap.min.js"></script>
+    <script src="Js/jquery.cycle.js"></script>
+    <script src="Js/slideShow.js"></script>
+    <script src="Js/jquery.bsPhotoGallery.js"></script>
+
+
+
+  </head>
+  <body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+      <a id="inicio" class="navbar-brand" href="#">Inicio</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a id="acerca"class="nav-link" href="#">Acerca de</a>
+          </li>
+          <li class="nav-item">
+            <a id="proyecto"class="nav-link" href="#">Proyectos</a>
+          </li>
+          <li class="nav-item">
+            <a id="contacto" class="nav-link" href="#">Contacto</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Versión</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <script>
+      $(document).ready(function() {
+        $('#inicio').click(function(){
+          $('html,body').animate({ scrollTop: 0 }, 'slow');
+          return false;
+          });
+        $('#acerca').click(function(){
+          $('html,body').animate({ scrollTop: 700 }, 'slow');
+          return false;
+          });
+        $('#proyecto').click(function(){
+            if ($(Window).width() >= 1200) {
+              $('html,body').animate({ scrollTop: 1350 }, 'slow');
+            }
+
+            else {
+              if ($(Window).width() <= 1024 && $(Window).width()>768){
+                $('html,body').animate({ scrollTop: 1420 }, 'slow');
+              }
+              else{
+                if ($(Window).width() <= 768){
+                  $('html,body').animate({ scrollTop: 1950 }, 'slow');
+                }
+              }
+            }
+          return false;
+          });
+        $('#contacto').click(function(){
+          $('html,body').animate({ scrollTop: 2660 }, 'slow');
+          return false;
+          });
+        });
+    </script>
+
+    <div id="header" class="jumbotron text-center text-white " style="margin-bottom:0">
+      <h1 id="titulo" class="display-1">Brandon Louis</h1>
+      <h1 class="display-5">Developer.</h1>
+
+    </div>
+    <div id="secction" class="container-fluid bg-dark text-white">
+      <div class="row">
+        <div class="col-sm">
+          <h1 class="text-center">SOBRE MI</h1><br>
+          <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><br>
+          <h3>¿example?</h3>
+          <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><br>
+          <h2 id="welcome" class="text-center">Bienvenidos todos!</h2>
+        </div>
+        <div class="col-sm">
+          <h2>Conocimientos</h2>
+          <ul class="nav nav-pills flex-column">
+
+            <li class="nav-item">
+              <p class="nav-link active" style="background-color:#516348;">Example</p>
+            </li>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.  </p>
+            <li class="nav-item">
+              <p class="nav-link active" style="background-color:#516348;">Example</p>
+            </li>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+            <li class="nav-item">
+              <p class="nav-link active" style="background-color:#516348;">Example</p>
+            </li>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <li class="nav-item">
+              <p class="nav-link active" style="background-color:#516348;">Example</p>
+            </li>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+          </ul>
+          <hr class="d-sm-none">
+        </div>
+
+        <div id="secction" class="container-fluid">
+          <div id="proyectos" class="container-sm">
+            <h1 id="proyect"class="text-center">PROYECTOS</h1>
+            <br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<a class="navbar-brand" href="https://github.com/Digonz" target="_blank">GitHub</a></p>
+              <br>
+              <ul class="row first">
+                <li>
+                    <img alt="Rocking the night away"  src="img/1plug.png">
+                    <p>Diseño Web para proyecto de Universidad realizado con HTML, CSS y JavaScript (jQuery). <a href="#">Ver Más</a></p>
+                </li>
+                <li>
+                    <img alt="Yellow sign"  src="http://demo.michaelsoriano.com/images/photodune-287182-blah-blah-blah-yellow-road-sign-xs.jpg">
+                    <p>Lorem ipsum dolor sit amet, labore et dolore magna aliqua. Ut enim ad minim veniam <a href="#">Ver Más</a> </p>
+                </li>
+                <li>
+                    <img alt="Colors"  src="http://demo.michaelsoriano.com/images/photodune-460760-colors-xs.jpg">
+                     <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+                </li>
+                <li>
+                    <img alt="Retro party"  src="http://demo.michaelsoriano.com/images/photodune-461673-retro-party-xs.jpg">
+                    <p>Lorem, do eiusmod tempor incid Ut enim ad minim veniam</p>
+                </li>
+                <li>
+                    <img alt="Retro party"  src="http://demo.michaelsoriano.com/images/photodune-461673-retro-party-xs.jpg">
+                    <p>Lorem, do eiusmod tempor incid Ut enim ad minim veniam</p>
+                </li>
+                <li>
+                    <img alt="Retro party"  src="http://demo.michaelsoriano.com/images/photodune-461673-retro-party-xs.jpg">
+                    <p>Lorem, do eiusmod tempor incid Ut enim ad minim veniam</p>
+                </li>
+
+
+              </ul>
+
+            <script>
+              $(document).ready(function() {
+                  $('.slideshow').cycle({
+                    fx: 'scrollUp' // choose your transition type, ex: fade, scrollUp, shuffle, etc...
+                  });
+
+                  $('ul.first').bsPhotoGallery({
+                    "classes" : "col-xl-3 col-lg-2 col-md-4 col-sm-4",
+                    "hasModal" : true,
+                    "shortText" : false
+                  });
+
+              });
+            </script>
+          <div id="con" class="container-sm">
+            <h2 class="text-center">CONTACTO</h2>
+            <br>
+            <p>Contact</p>
+            <table id="tarjeta">
+              <tr>
+                <td > <img id="log" src="img/icons/gmail.png" alt=""> </td>
+                <td >example@example.com</td>
+              </tr>
+              <tr>
+                <td > <img id="log" src="img/icons/whatsapp.png" alt=""> </td>
+                <td >+12 4 56814125</td>
+              </tr>
+              <tr>
+                <td > <img id="log" src="img/icons/github.png" alt=""> </td>
+                <td >https://github.com/example</td>
+              </tr>
+              <tr>
+                <td > <img id="log" src="img/icons/linkedin.png" alt=""> </td>
+                <td >https://www.linkedin.com/example</td>
+              </tr>
+              <tr>
+                <td > <img id="log" src="img/icons/instagram.png" alt=""> </td>
+                <td >@example</td>
+              </tr>
+              </table>
+
+            </div>
+            <img id="contact" src="img/contacto.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div id="herramientas">
+        <h1 id="txt">Herramientas</h1>
+        <a href="https://atom.io" target="_blank">Atom</a>
+        <a href="https://getbootstrap.com" target="_blank" >Bootstrap</a>
+        <a href="https://www.000webhost.com" target="_blank" >Host</a>
+        <a href="https://www.w3schools.com" target="_blank" >W3School</a>
+      </div>
+      <div id="love"> 2021, copyright © Digonz </div>
+    </footer>
+  </body>
+</html>
